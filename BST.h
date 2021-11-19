@@ -1,5 +1,5 @@
 // An integer binary search tree
-
+#include<iomanip>
 struct TreeNode {                                           
    TreeNode *leftPtr; // pointer to left subtree 
    int data; // node value                               
@@ -78,7 +78,7 @@ void inOrder( TreeNodePtr treePtr )
         
       inOrder( treePtr->leftPtr ); //Recursion to the left
  
-      printf( "%3d", treePtr->data );  //print the value 
+      cout<<setw(3)<< treePtr->data ;  //print the value 
    
       inOrder( treePtr->rightPtr ); //Recursion to the right
    } // end if                          
